@@ -8,8 +8,9 @@ def verify_card_number(card_number):
     odd_digits = card_number_reversed[::2]
     
     for x in odd_digits:
-        print(x)
-        x += sum_of_odd_digits
+        sum_of_odd_digits += int(x)
+        print(sum_of_odd_digits)
+        sum_of_even_digits = 0
 
     pass
 
